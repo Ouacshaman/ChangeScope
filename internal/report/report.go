@@ -91,7 +91,7 @@ func Print(w io.Writer, r Report) {
 		fmt.Fprintln(w, "  - Run related package tests")
 	}
 	if hasGoFiles(impactFiles) {
-		fmt.Fprintln(w, "  - Verify API and integration behaviour")
+		fmt.Fprintln(w, "  - Review affected integration points")
 	}
 }
 
